@@ -12,6 +12,7 @@
         "clock",
         "tray"],
 
+        
         "hyprland/workspaces": {
             "format": "{icon}",
         }
