@@ -19,7 +19,7 @@ window#waybar.hidden {
 }
 
 #window {
-    background-color: @base;
+    background-color: @crust;
     font-size: 14px;
     font-weight: bold;
 }
@@ -38,14 +38,14 @@ button:hover {
 
 #workspaces button {
     /*padding: 0 4px;*/
-    background-color: @base;
+    background-color: @crust;
 }
 
 #workspaces button:hover {}
 
 #workspaces button.active {
     /*    box-shadow: inset 0 -2px #c9545d; */
-    background-color: @base;
+    background-color: @crust;
     color: #c9545d;
     text-decoration: none;
 }
@@ -75,44 +75,44 @@ button:hover {
 }
 
 #window {
-    background: @base;
+    background: @crust;
     color: white;
 }
 
 #workspaces {
     color: @text;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #backlight {
     color: @teal;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #pulseaudio {
     color: @green;
-    background-color: @base;
+    background-color: @crust;
 
 }
 
 #cpu {
     color: @yellow;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #battery {
-    background-color: @base;
+    background-color: @crust;
     color: @peach;
 }
 
 #clock {
     color: @marron;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #memory {
     color: @red;
-    background-color: @base;
+    background-color: @crust;
 }
 
 #battery icon {
@@ -155,11 +155,11 @@ button:hover {
 
 #clock {
     color: @mauve;
-    background-color: @base;
+    background-color: @crust;
 
 }
 
 #tray {
-    background-color: @base;
+    background-color: @crust;
     color: #ffffff;
 }
