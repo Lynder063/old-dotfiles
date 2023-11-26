@@ -1,0 +1,20 @@
+window {
+    font-size: 19px;
+    font-family: "Hack Nerd Font";
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#entry {
+    margin: 3px;
+    padding: 5px;
+}
+
+#entry:selected {
+    border-radius: 5px;
+}
+
+image {
+    margin-left: .25em;
+    margin-right: .25em;
+}
