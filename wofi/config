@@ -1,6 +1,6 @@
 mode=drun
 allow_images=true
-image_size=32
+image_size=28
 width=600
-height=300
+height=350
 prompt=Search...
