@@ -59,6 +59,12 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
+.custom-spotify {
+    background-color: @crust;
+    color: @text;
+}
+
+.custom-spotify,
 #clock,
 #battery,
 #cpu,
