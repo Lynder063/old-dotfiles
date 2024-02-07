@@ -1,23 +1,14 @@
 ## Dotfiles
 
-```bash
-sudo pacman -S alacritty grim wofi waybar neovim nerd-fonts ttf-font-awesome noto-fonts-emoji thunar thunar-volman gvfs network-manager-applet dunst swaybg
-```
+### Requirements
+You need:
+ - [Arch](https://wiki.archlinux.org/title/Arch-based_distributions) based system
+ - [yay](https://github.com/Jguer/yay) aur helper
+
+### Guide
 
 ```bash
-yay -S swaylock-effects
+yay -S kitty grim wofi waybar neovim ttf-font-awesome noto-fonts-enoji thunar thunar-volman gvfs network-manager-applet dunst hyprpaper swaylock-effects ranger flameshot-gui ttf-hack-nerd
 ```
 
-//hyprpaper
 
-## Installing on Fedora
-
-```bash
-sudo dnf install alacritty grim wofi waybar neovim nerd-fonts thunar thunar-volman gvfs dunst swaylock
-```
-
-```bash
-git clone https://github.com/Lynder063/dotfiles.git && cd dotfiles && cp -r * ~/.config && cd .. && sudo rm -r dotfiles
-```
-
-**Compile your hyprpaper**
