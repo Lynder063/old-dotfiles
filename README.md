@@ -9,7 +9,9 @@ You need:
 
 #### With script
 
-`./install.sh`
+```bash
+./install.sh
+```
 
 #### Manual
 
