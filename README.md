@@ -16,11 +16,8 @@ You need:
 #### Manual
 
 **Warning**
-Packages `swaylock-effects` and `flameshot-gui` are compiled while installation!
+Packages `swaylock-effects` is a compiled package while installation!
 
 ```bash
-yay -S kitty grim wofi waybar neovim ttf-font-awesome noto-fonts-enoji \
-thunar thunar-volman gvfs network-manager-applet dunst hyprpaper \
-swaylock-effects ranger flameshot-gui ttf-hack-nerd
+yay -S hyprland kitty grim wofi waybar neovim ttf-font-awesome noto-fonts-emoji thunar thunar-volman gvfs network-manager-applet dunst hyprpaper swaylock-effects ranger ttf-hack-nerd catppuccin-gtk-theme-mocha &&  
 ```
-
