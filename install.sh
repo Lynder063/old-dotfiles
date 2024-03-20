@@ -41,7 +41,7 @@ rm -rf "$HOME/.config" && git clone https://github.com/Lynder063/dotfiles.git "$
 
 # Install basic packages
 echo "Installing basic packages..."
-yay -S $YAY_OPTS hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus wget curl || error_exit "Failed to install basic packages."
+yay -S $YAY_OPTS hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus wget curl ocs-url || error_exit "Failed to install basic packages."
 
 # Set dark theme for Gnome applications
 echo "Setting dark theme for Gnome applications..."
@@ -78,6 +78,4 @@ bash /tmp/install.sh || error_exit "Failed to install Grub theme."
 # Start ly daemon
 echo "Starting ly daemon..."
 sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
-
-echo "Installation completed successfully."
 
