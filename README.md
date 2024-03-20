@@ -1,9 +1,12 @@
 ## Dotfiles
 
+### TODO
+- [ ] Add icons to `install.sh`
+- [ ] Add icons to `README.md` guide
+
 ### Requirements
 You need:
  - [Arch](https://wiki.archlinux.org/title/Arch-based_distributions) based system
- - [yay](https://github.com/Jguer/yay) aur helper
 
 ### Installation
 
@@ -22,7 +25,7 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 - Instalace základních balíčků
 
 ```bash
-yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus
+yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl
 ```
 
 - Nastavíme dark theme pro Gnome aplikace
