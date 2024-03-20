@@ -91,12 +91,12 @@ button:hover {
 }
 
 #backlight {
-    color: @teal;
+    color: @yellow;
     background-color: @crust;
 }
 
 #pulseaudio {
-    color: @green;
+    color: @peach;
     background-color: @crust;
 
 }
@@ -108,7 +108,7 @@ button:hover {
 
 #battery {
     background-color: @crust;
-    color: @peach;
+    color: @green;
 }
 
 #clock {
@@ -127,7 +127,7 @@ button:hover {
 
 #battery.charging,
 #battery.plugged {
-    color: white;
+    color: black;
     background-color: @green;
     font-weight: bold;
 }
@@ -160,7 +160,7 @@ button:hover {
 }
 
 #clock {
-    color: @mauve;
+    color: @marron;
     background-color: @crust;
 
 }
