@@ -67,7 +67,6 @@ cp onrefetch.conf "$HOME/.config/neofetch/config.conf" || error_exit "Failed to 
 
 # Set up Nautilus
 echo "Setting up Nautilus..."
-nautilus -q && \
 yay -S $YAY_OPTS nautilus-open-any-terminal && \
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty || error_exit "Failed to set up Nautilus."
 
