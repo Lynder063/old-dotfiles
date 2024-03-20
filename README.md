@@ -8,10 +8,7 @@ You need:
 ### Installation
 
 ```bash
-yay -S hyprland kitty grim slurp wofi zsh waybar neovim ttf-font-awesome noto-fonts-emoji \
-network-manager-applet blueman-applet dunst hyprpaper swaylock-effects \
-ttf-hack-nerd catppuccin-gtk-theme-mocha hyprshot ttf-meslo-nerd-font-powerlevel10k
-zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k 
+yay -S hyprland kitty grim slurp wofi zsh waybar neovim ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects ttf-hack-nerd catppuccin-gtk-theme-mocha hyprshot ttf-meslo-nerd-font-powerlevel10k zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k polkit-gnome gnome-keyrin polkit-gnome gnome-keyring 
 ```
 
 # Grub theme
