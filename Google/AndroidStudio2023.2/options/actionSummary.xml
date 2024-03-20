@@ -1,0 +1,49 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$SelectAll">
+      <i c="13" l="1710436941656" />
+    </e>
+    <e n="Debug">
+      <i c="3" l="1710436755487" />
+    </e>
+    <e n="EditorCopy">
+      <i c="9" l="1710436942096" />
+    </e>
+    <e n="EditorPaste">
+      <i c="8" l="1710436492818" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="1" l="1710436393739" />
+    </e>
+    <e n="Run">
+      <i c="2" l="1710436899545" />
+    </e>
+    <e n="SaveAll">
+      <i c="8" l="1710436560281" />
+    </e>
+    <e n="Stop">
+      <i c="2" l="1710436967208" />
+    </e>
+    <e n="Vcs.VcsClone">
+      <i c="1" l="1710435698987" />
+    </e>
+    <e n="android.device.overview.button">
+      <i c="1" l="1710436010424" />
+    </e>
+    <e n="android.device.power.button">
+      <i c="6" l="1710436520270" />
+    </e>
+    <e n="com.android.build.output.LongDownloadsNotifier$notifyIfTimeElapsed$1$1">
+      <i c="1" l="1710435924119" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="9" l="1710436647203" />
+    </e>
+    <e n="com.intellij.terminal.actions.TerminalActionWrapper">
+      <i c="2" l="1710436714448" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1710435965305" />
+    </e>
+  </component>
+</application>
