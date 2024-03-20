@@ -4,6 +4,8 @@
 - [ ] Add icons to `install.sh`
 - [ ] Add icons to `README.md` guide
 - [ ] Redo `README.md`
+- [ ] Added stuff for streaming
+- [ ] Add keymap to `README.md`
 
 ### Requirements
 You need:
