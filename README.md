@@ -3,6 +3,7 @@
 ### TODO
 - [ ] Add icons to `install.sh`
 - [ ] Add icons to `README.md` guide
+- [ ] Redo `README.md`
 
 ### Requirements
 You need:
