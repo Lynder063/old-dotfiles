@@ -22,3 +22,18 @@ ttf-hack-nerd catppuccin-gtk-theme-mocha hyprshot ttf-meslo-nerd-font-powerlevel
 zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k 
 ```
 
+# Grub theme
+[Thanks, shvchk](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
+
+
+- Download it
+
+
+```bash
+wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
+```
+
+- Run it
+```bash
+bash /tmp/install.sh
+```
