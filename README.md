@@ -1,9 +1,14 @@
-## Dotfiles
+# My Arch Linux rice
 
-### TODO
+![Screenshot 1](pics/pic_1.png) 
+![Screenshot 1](pics/pic_2.png) 
+![Screenshot 1](pics/pic_3.png) 
+![Screenshot 1](pics/pic_4.png) 
+
+## TODO
 - [ ] Add icons to `install.sh`
 - [ ] Add icons to `README.md` guide
-- [ ] Redo `README.md`
+- [x] Redo `README.md`
 - [ ] Added stuff for streaming
 - [ ] Add keymap to `README.md`
 
@@ -28,7 +33,7 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 - Instalace základních balíčků
 
 ```bash
-yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl
+yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland
 ```
 
 - Nastavíme dark theme pro Gnome aplikace
@@ -60,6 +65,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 ZSH_AUTOSUGGEST_STRATEGY=( history completion )
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 neofetch
 ```
 
