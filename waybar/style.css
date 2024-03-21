@@ -59,21 +59,16 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
-.custom-spotify {
-    background-color: @crust;
-    color: @text;
-}
-
 .custom-spotify,
 #clock,
 #battery,
-#cpu,
-#memory,
 #temperature,
 #backlight,
 #pulseaudio,
 #tray,
 #window,
+#privacy,
+#keyboard-state,
 #workspaces {
     padding: 0 15px;
     margin: 0 2px;
@@ -168,4 +163,24 @@ button:hover {
 #tray {
     background-color: @crust;
     color: #ffffff;
+}
+
+#privacy {
+  background-color: @peach;
+  color: @crust;
+}
+
+#keyboard-state {
+ background-color: @crust;
+ color: white;
+}
+
+#keyboard-state label {
+ background-color: @peach;
+ color: white;
+}
+
+#keyboard-state label.locked {
+ background-color: @peach;
+ color: white;
 }

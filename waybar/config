@@ -2,100 +2,116 @@
         "layer": "top",
         "height": 25,
         "spacing": 0,
-        "modules-left": ["hyprland/workspaces"],
+        "modules-left": ["hyprland/workspaces", "privacy"],
         "modules-center": ["hyprland/window"],
         "modules-right": [
         "clock",
+        "keyboard-state",
         "pulseaudio",
         "backlight",
         "battery",
         "tray"],
 
         
-        "hyprland/workspaces": {
-            "format": "{icon}",
-        },
+"hyprland/workspaces": {
+  "format": "{icon}",
+},
 
-        "hyprland/window": {
-            "max-length": 130,
-                "separate-outputs": true
+"hyprland/window": {
+  "max-length": 130,
+  "separate-outputs": true
+},
+
+"tray": {
+  "icon-size": 15,
+  "spacing": 5
+},
+
+"clock": {
+  "interval": 1,
+  "format": "  {:%d.%m.%Y | %H:%M:%S}  ",
+  "tooltip-format": "<tt>{calendar}</tt>",
+      "calendar": {
+        "format": {
+          "months":     "<span color='#ffead3'><b>{}</b></span>",
+          "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+          "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+          }
         }
-
-        ,
-        "tray": {
-            "icon-size": 15,
-                "spacing": 5
-        },
-
-  "clock": {
-    "interval": 1,
-    "format": "  {:%d.%m.%Y | %H:%M:%S}  ",
-    "tooltip-format": "<tt>{calendar}</tt>"
   },
 
-"network": {
-    "format": "{ifname}",
-    "format-wifi": "{essid} ({signalStrength}%) {icon}",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "format-ethernet": "{ipaddr}/{cidr} 󰈀",
-    "format-disconnected": "", //An empty format will hide the module.
-    "tooltip-format": "{ifname} via {gwaddr} 󰈀",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
+"backlight": {
+  "format": "{percent}% {icon}",
+  "format-icons": ["", "", "", "", "", "", "", "", ""]
+},        
+
+"battery": {
+  "bat": "BAT1",
+  "states": {
+    "good": 95,
+    "warning": 30,
+    "critical": 15
   },
+  "format": "{capacity}% {icon}",
+  "format-charging": "{capacity}% ",
+  "format-plugged": "{capacity}% ",
+  "format-icons": ["",
+    "",
+    "",
+    "",
+    ""]
+},   
 
+"pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+      },
+  "on-click": "pavucontrol"
+},
 
+"privacy": {
+	"icon-spacing": 5,
+	"icon-size": 15,
+	"transition-duration": 250,
+	"modules": [
+		{
+			"type": "audio-in",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		},
+		{
+			"type": "screenshare",
+			"tooltip": true,
+			"tooltip-icon-size": 24
+		}
+	]
+},
 
-        "backlight": {
-
-            "format": "{percent}% {icon}",
-            "format-icons": ["", "", "", "", "", "", "", "", ""]
-        }
-
-        ,
-        "battery": {
-
-            "bat": "BAT1",
-            "states": {
-                "good": 95,
-                    "warning": 30,
-                    "critical": 15
-            }
-
-            ,
-            "format": "{capacity}% {icon}",
-            "format-charging": "{capacity}% ",
-            "format-plugged": "{capacity}% ",
-            "format-icons": ["",
-            "",
-            "",
-            "",
-            ""]
-        }
-
-        ,
-        "pulseaudio": {
-
-            // "scroll-step": 1, // %, can be a float
-            "format": "{volume}% {icon} {format_source}",
-            "format-bluetooth": "{volume}% {icon} {format_source}",
-            "format-bluetooth-muted": " {icon} {format_source}",
-            "format-muted": " {format_source}",
-            "format-source": "{volume}% ",
-            "format-source-muted": "",
-            "format-icons": {
-                "headphone": "",
-                    "hands-free": "",
-                    "headset": "",
-                    "phone": "",
-                    "portable": "",
-                    "car": "",
-                    "default": ["", "", ""]
-            }
-
-            ,
-            "on-click": "pavucontrol"
-        }
+"keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": {
+        "numlock": "Num: {icon}",
+        "capslock": "Caps: {icon}"                                                                                                                                                       
+    },
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
     }
+},
+}

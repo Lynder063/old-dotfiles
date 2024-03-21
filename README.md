@@ -22,6 +22,16 @@ I have created script for setuping this rice
 ### Manual install
 #### Basic settings
 
+- Adding user to correct groups
+
+```bash
+sudo usermod -aG input ${USER}
+```
+
+```bash
+sudo usermod -aG video ${USER}
+```
+
 - Delete the existing `.config`
 
 ``` bash
