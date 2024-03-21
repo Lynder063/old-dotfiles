@@ -5,11 +5,10 @@
         "modules-left": ["hyprland/workspaces", "privacy"],
         "modules-center": ["hyprland/window"],
         "modules-right": [
-        "clock",
-        "keyboard-state",
-        "pulseaudio",
         "backlight",
         "battery",
+        "pulseaudio",
+        "clock",
         "tray"],
 
         
@@ -29,8 +28,9 @@
 
 "clock": {
   "interval": 1,
-  "format": "  {:%d.%m.%Y | %H:%M:%S}  ",
-  "tooltip-format": "<tt>{calendar}</tt>",
+  "format": "  {:%d.%m.%Y |  %H:%M:%S}",
+  "locale": "cs_CZ.UTF-8",
+  "tooltip-format": "<span size= '10pt' font='Hack Nerd Font'>{calendar}</span>",
       "calendar": {
         "format": {
           "months":     "<span color='#ffead3'><b>{}</b></span>",
@@ -91,27 +91,11 @@
 	"modules": [
 		{
 			"type": "audio-in",
-			"tooltip": true,
-			"tooltip-icon-size": 24
 		},
 		{
 			"type": "screenshare",
-			"tooltip": true,
-			"tooltip-icon-size": 24
 		}
 	]
 },
 
-"keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": {
-        "numlock": "Num: {icon}",
-        "capslock": "Caps: {icon}"                                                                                                                                                       
-    },
-    "format-icons": {
-        "locked": "",
-        "unlocked": ""
-    }
-},
 }

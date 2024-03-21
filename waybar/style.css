@@ -68,7 +68,6 @@ button:hover {
 #tray,
 #window,
 #privacy,
-#keyboard-state,
 #workspaces {
     padding: 0 15px;
     margin: 0 2px;
@@ -86,33 +85,23 @@ button:hover {
 }
 
 #backlight {
-    color: @yellow;
+    color: @red;
     background-color: @crust;
 }
 
 #pulseaudio {
-    color: @peach;
+    color: @sky;
     background-color: @crust;
 
-}
-
-#cpu {
-    color: @yellow;
-    background-color: @crust;
 }
 
 #battery {
     background-color: @crust;
-    color: @green;
+    color: @yellow;
 }
 
 #clock {
-    color: @marron;
-    background-color: @crust;
-}
-
-#memory {
-    color: @red;
+    color: @lavender;
     background-color: @crust;
 }
 
@@ -154,12 +143,6 @@ button:hover {
     animation-direction: alternate;
 }
 
-#clock {
-    color: @marron;
-    background-color: @crust;
-
-}
-
 #tray {
     background-color: @crust;
     color: #ffffff;
@@ -170,17 +153,3 @@ button:hover {
   color: @crust;
 }
 
-#keyboard-state {
- background-color: @crust;
- color: white;
-}
-
-#keyboard-state label {
- background-color: @peach;
- color: white;
-}
-
-#keyboard-state label.locked {
- background-color: @peach;
- color: white;
-}
