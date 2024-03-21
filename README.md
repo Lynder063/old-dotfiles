@@ -12,11 +12,9 @@
 - [ ] Added stuff for streaming
 - [ ] Add keymap to `README.md`
 
-### Requirements
-You need:
- - [Arch](https://wiki.archlinux.org/title/Arch-based_distributions) based system
+## Instalace
 
-### Installation
+### Základní nastavení
 
 - Smažeme existující `.config`
 
@@ -24,7 +22,7 @@ You need:
 rm -r .config
 ```
 
-- Clonování repositáře
+- Naklonování repositáře jako `.config`
 ```bash
 cd $HOME &
 git clone https://github.com/Lynder063/dotfiles.git .config
@@ -33,16 +31,15 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 - Instalace základních balíčků
 
 ```bash
-yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland
+yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
 ```
 
-- Nastavíme dark theme pro Gnome aplikace
+- Nastavíme dark theme pro **gnome** aplikace
 
 ```bash
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 ```
-
-- Instalace a nastavení zsh
+### Zsh
 
 ```bash
 yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k 
@@ -53,7 +50,8 @@ yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 - Nainstalujeme [ohmyzsh](https://ohmyz.sh/#install)
 
 > [!WARNING]
-> Je potřeba mít nainstalovný balíček `curl`
+> Je potřeba mít nainstalovný balíček `curl` a `wget`
+
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -69,7 +67,7 @@ ZSH_AUTOSUGGEST_STRATEGY=( history completion )
 neofetch
 ```
 
-## Nastavíme neutilus
+### Nautilus
  
 ```bash
 nautilus -q
@@ -87,9 +85,8 @@ yay -S nautilus-open-any-terminal
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
-# Grub theme
-[Thanks, shvchk](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
-
+# Grub 
+[Thanks, shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
 - Stáhneme instalační script
 
