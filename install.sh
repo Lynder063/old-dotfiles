@@ -58,12 +58,6 @@ echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> "$HO
 echo "ZSH_AUTOSUGGEST_STRATEGY=( history completion )" >> "$HOME/.zshrc" && \
 echo "neofetch" >> "$HOME/.zshrc" || error_exit "Failed to install and configure zsh."
 
-# Download and set neofetch theme
-echo "Downloading and setting neofetch theme..."
-mkdir -p /tmp && \
-cd /tmp && \
-wget https://raw.githubusercontent.com/Chick2D/neofetch-themes/main/normal/onrefetch.conf && \
-cp onrefetch.conf "$HOME/.config/neofetch/config.conf" || error_exit "Failed to download or set neofetch theme."
 
 # Set up Nautilus
 echo "Setting up Nautilus..."

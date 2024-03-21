@@ -63,21 +63,6 @@ ZSH_AUTOSUGGEST_STRATEGY=( history completion )
 neofetch
 ```
 
-### Nastavení neofetch
-
-- Stáhneme theme 
-
-```bash
-cd tmp/
-https://raw.githubusercontent.com/Chick2D/neofetch-themes/main/normal/onrefetch.conf
-```
-
-- A přepíšeme originální neofetch config 
-
-```bash
-cp /tmp/onrefetch.conf config.conf
-```
-
 ## Nastavíme neutilus
  
 ```bash
