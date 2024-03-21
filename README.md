@@ -99,6 +99,8 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
 bash /tmp/install.sh
 ```
 
+### Ly
+
 - Spustíme deamona pro ly 
 ```bash
 sudo systemctl enable ly --now
