@@ -9,7 +9,7 @@
 - [ ] Add icons to `install.sh` file
 - [ ] Add keymap to `README.md`
 - [ ] Fix waybar config and `style.css`, add privac and keyboard state module and bluetooth module for bluetooth headphones
-
+- [ ] Fix swaylock or move to hyprland alternative
 
 ## Installation
 

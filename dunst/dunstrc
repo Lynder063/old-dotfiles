@@ -1,6 +1,10 @@
 [global]
 frame_color = "#89B4FA"
 separator_color= frame
+font = Hack Nerd Font 10
+width = (0, 600)
+height = 300
+origin = top-right
 
 [urgency_low]
 background = "#1E1E2E"
