@@ -1,107 +1,104 @@
 # My Arch Linux rice
 
-![Screenshot 1](pics/pic_1.png) 
-![Screenshot 1](pics/pic_2.png) 
-![Screenshot 1](pics/pic_3.png) 
-![Screenshot 1](pics/pic_4.png) 
+![Screenshot 1](pics/pic_1.png)
+![Screenshot 1](pics/pic_2.png)
+![Screenshot 1](pics/pic_3.png)
+![Screenshot 1](pics/pic_4.png)
 
-## TODO
-- [ ] Add icons to `install.sh`
-- [ ] Add icons to `README.md` guide
-- [x] Redo `README.md`
-- [ ] Added stuff for streaming
+## DO
+- [ ] Add icons to `install.sh` file
 - [ ] Add keymap to `README.md`
 
-## Instalace
+## Installation
 
-### Základní nastavení
+### Basic settings
 
-- Smažeme existující `.config`
+- Delete the existing `.config`
 
-```bash
+``` bash
 rm -r .config
 ```
 
-- Naklonování repositáře jako `.config`
-```bash
+- Clone repository as `.config`
+``` bash
 cd $HOME &
 git clone https://github.com/Lynder063/dotfiles.git .config
 ```
 
-- Instalace základních balíčků
+- Installation of basic packages
 
-```bash
-yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
+``` bash
+yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha-gnome hyprshot polk - keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
 ```
 
-- Nastavíme dark theme pro **gnome** aplikace
+- Set a dark theme for the **gnome** applications
 
-```bash
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+``` bash
+gsettings set org.gnome.desktop.interface color scheme prefer-dark
 ```
 ### Zsh
 
-```bash
-yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k 
+``` bash
+yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 ```
 
-- Pustíme `zsh` a dáme **0** 
+- Let's run `zsh` and type **0**
 
-- Nainstalujeme [ohmyzsh](https://ohmyz.sh/#install)
+- We will install [ohmyzsh](https://ohmyz.sh/#install)
 
 > [!WARNING]
-> Je potřeba mít nainstalovný balíček `curl` a `wget`
+> You need to have the `curl` and `wget` packages installed
 
 
-```bash
+``` bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-- A vložíme do souboru `.zshrc` toto
-```bash
+- And we this in `.zshrc` file
+``` bash
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-ZSH_AUTOSUGGEST_STRATEGY=( history completion )
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+ZSH_AUTOSUGGEST_STRATEGY=( complete history )
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"
 neofetch
 ```
 
 ### Nautilus
  
-```bash
+``` bash
 nautilus -q
 ```
 
-- Nainstalujeme addon pro terminal do nautilusu
+- We will install the terminal addon in nautilus
 
-```bash
+``` bash
 yay -S nautilus-open-any-terminal
 ```
 
-- Propíšeme konfiguraci
+- Add support for kitty terminal
 
-```bash
+``` bash
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
-# Grub 
-[Thanks, shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
+# Grub
+[Thanks shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
-- Stáhneme instalační script
+- Download the installation script
 
-```bash
+``` bash
 wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
 ```
 
-- Spustíme
-```bash
+- Let's launch
+``` bash
 bash /tmp/install.sh
 ```
 
 ### Ly
 
-- Spustíme deamona pro ly 
-```bash
+- We start the daemon for ly
+``` bash
 sudo systemctl enable ly --now
 ```
