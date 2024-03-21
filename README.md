@@ -7,9 +7,10 @@
 
 ## TODO
 - [ ] Add icons to `install.sh` file
-- [ ] Add keymap to `README.md`
-- [x] Fix waybar config and `style.css`, add privac and keyboard state module and bluetooth module for bluetooth headphones
+- [x] Add keymap to `README.md`
+- [ ] Rework keymap to `README.md`
 - [ ] Fix swaylock or move to hyprland alternative
+- [ ] Update rice screenshots
 
 ## Installation
 
@@ -121,3 +122,25 @@ bash /tmp/install.sh
 ``` bash
 sudo systemctl enable ly --now
 ```
+
+## Keymap
+- `$mainMod + RETURN`: Execute `kitty`
+- `$mainMod + SHIFT + Q`: Kill active window
+- `$mainMod + SHIFT + E`: Exit
+- `$mainMod + E`: Execute `nautilus`
+- `$mainMod + F`: Fullscreen
+- `$mainMod + E`: Execute `thunar`
+- `Mod4 + SHIFT + S`: Execute `screenshot.sh` (script for screenshot, needs to be in `/usr/local/bin/`)
+- `$mainMod + V`: Toggle floating
+- `$mainMod + D`: Execute `wofi`
+- `Mod4 + L`: Execute `swaylock`
+- `$mainMod + P`: Pseudo
+- `$mainMod + J`: Toggle split
+- `$mainMod + arrow keys`: Move focus (left, right, up, down)
+- `$mainMod + [0-9]`: Switch workspaces (1-10, modified for Czech keyboard layout)
+- `$mainMod + SHIFT + [0-9]`: Move active window to workspace (1-10, modified for Czech keyboard layout)
+- `$mainMod + scroll`: Scroll through existing workspaces
+- `$mainMod + LMB/RMB` (dragging): Move/resize windows
+- `$mainMod + CTRL + arrow keys`: Resize active window (left, right, up, down)
+- `$mainMod + SHIFT + RETURN`: Swap master with slave window
+
