@@ -5,13 +5,20 @@
 ![Screenshot 1](pics/pic_3.png)
 ![Screenshot 1](pics/pic_4.png)
 
-## DO
+## TODO
 - [ ] Add icons to `install.sh` file
 - [ ] Add keymap to `README.md`
 
 ## Installation
 
-### Basic settings
+### Automatic
+I have created script for setuping this rice
+```bash
+./install.sh
+```
+
+### Manual install
+#### Basic settings
 
 - Delete the existing `.config`
 
@@ -36,7 +43,7 @@ yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-aweso
 ``` bash
 gsettings set org.gnome.desktop.interface color scheme prefer-dark
 ```
-### Zsh
+#### Zsh
 
 ``` bash
 yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
@@ -64,7 +71,7 @@ ZSH_AUTOSUGGEST_STRATEGY=( complete history )
 neofetch
 ```
 
-### Nautilus
+#### Nautilus
  
 ``` bash
 nautilus -q
@@ -82,7 +89,7 @@ yay -S nautilus-open-any-terminal
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
-# Grub
+#### Grub
 [Thanks shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
 - Download the installation script
@@ -96,7 +103,7 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
 bash /tmp/install.sh
 ```
 
-### Ly
+#### Ly
 
 - We start the daemon for ly
 ``` bash
