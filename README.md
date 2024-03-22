@@ -100,6 +100,13 @@ yay -S nautilus-open-any-terminal
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
+- Enable settings to show hidden files
+
+
+```bash
+gsettings set org.gnome.nautilus.preferences show-hidden-files true
+```
+
 #### Grub
 [Thanks shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
