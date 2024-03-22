@@ -27,49 +27,51 @@ if ! command -v yay &> /dev/null; then
     fi
 fi
 
-# Define options for yay and pacman
-YAY_OPTS="--noconfirm --needed"
-PACMAN_OPTS="--noconfirm --needed"
+# Adding user to correct groups
+sudo usermod -aG input ${USER}
+sudo usermod -aG video ${USER}
 
-# Update system
-echo "Updating system..."
-yay -Syu $YAY_OPTS || error_exit "Failed to update system."
+# Delete existing .config if exists
+rm -rf $HOME/.config
 
-# Remove existing .config directory and clone dotfiles repository
-echo "Cloning dotfiles repository..."
-rm -rf "$HOME/.config" && git clone https://github.com/Lynder063/dotfiles.git "$HOME/.config" || error_exit "Failed to remove existing .config directory or clone dotfiles repository."
+# Clone repository as .config
+cd $HOME && git clone https://github.com/Lynder063/dotfiles.git .config
 
-# Install basic packages
-echo "Installing basic packages..."
-yay -S $YAY_OPTS hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha hyprshot polkit-gnome gnome-keyring ly nwg-look neofetch nautilus wget curl ocs-url || error_exit "Failed to install basic packages."
+# Installation of basic packages
+yay -S hyprland kitty grim slurp wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
 
-# Set dark theme for Gnome applications
-echo "Setting dark theme for Gnome applications..."
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark || error_exit "Failed to set dark theme for Gnome applications."
+# Set dark theme for gnome applications
+gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
 
-# Install and configure zsh
-echo "Installing and configuring zsh..."
-yay -S $YAY_OPTS zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k && \
-zsh -c "exit 0" && \
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
-echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HOME/.zshrc" && \
-echo "source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "$HOME/.zshrc" && \
-echo "source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" >> "$HOME/.zshrc" && \
-echo "ZSH_AUTOSUGGEST_STRATEGY=( history completion )" >> "$HOME/.zshrc" && \
-echo "neofetch" >> "$HOME/.zshrc" || error_exit "Failed to install and configure zsh."
+# Install zsh and related plugins
+yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 
+# Set up zsh with Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $HOME/.zshrc
+echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> $HOME/.zshrc
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> $HOME/.zshrc
+echo 'ZSH_AUTOSUGGEST_STRATEGY=( complete history )' >> $HOME/.zshrc
+echo '[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"' >> $HOME/.zshrc
+echo 'neofetch' >> $HOME/.zshrc
 
-# Set up Nautilus
-echo "Setting up Nautilus..."
-yay -S $YAY_OPTS nautilus-open-any-terminal && \
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty || error_exit "Failed to set up Nautilus."
+# Install the terminal addon in nautilus
+yay -S nautilus-open-any-terminal
 
-# Install Grub theme
-echo "Installing Grub theme..."
-wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh && \
-bash /tmp/install.sh || error_exit "Failed to install Grub theme."
+# Add support for kitty terminal
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
+
+# Enable settings to show hidden files in Nautilus
+gsettings set org.gnome.nautilus.preferences show-hidden-files true
+
+# Download the Grub installation script
+wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
+
+# Launch Grub installation
+bash /tmp/install.sh
 
 # Start ly daemon
-echo "Starting ly daemon..."
-sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
+sudo systemctl enable ly --now
+
+echo "Installation complete."
 
