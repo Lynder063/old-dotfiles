@@ -20,7 +20,7 @@ if ! command -v yay &> /dev/null; then
         cd /tmp || error_exit "Failed to change directory to /tmp."
         git clone https://aur.archlinux.org/yay-git.git || error_exit "Failed to clone yay-git repository."
         cd yay-git || error_exit "Failed to change directory to yay-git."
-        makepkg -si || error_exit "Failed to install yay."
+        makepkg -si --noconfirm || error_exit "Failed to install yay."
         cd "$HOME" || error_exit "Failed to change directory back to home directory."
     else
         error_exit "yay aur helper is required. Please install it first."
@@ -38,13 +38,13 @@ rm -rf $HOME/.config
 cd $HOME && git clone https://github.com/Lynder063/dotfiles.git .config
 
 # Installation of basic packages
-yay -S hyprland kitty grim slurp wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
+yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
 
 # Set dark theme for gnome applications
 gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
 
 # Install zsh and related plugins
-yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
+yay -S --noconfirm --needed zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 
 # Set up zsh with Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -56,7 +56,7 @@ echo '[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"' >> $HOME/.zsh
 echo 'neofetch' >> $HOME/.zshrc
 
 # Install the terminal addon in nautilus
-yay -S nautilus-open-any-terminal
+yay -S --noconfirm --needed nautilus-open-any-terminal
 
 # Add support for kitty terminal
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
