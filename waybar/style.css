@@ -67,7 +67,8 @@ button:hover {
 #pulseaudio,
 #tray,
 #window,
-#privacy,
+#privacy-item.screenshare,
+#privacy-item.audio-in,
 #workspaces {
     padding: 0 15px;
     margin: 0 2px;
@@ -148,7 +149,8 @@ button:hover {
     color: #ffffff;
 }
 
-#privacy {
+#privacy-item.screenshare,
+#privacy-item.audio-in{
   background-color: @peach;
   color: @crust;
 }
