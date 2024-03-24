@@ -28,7 +28,7 @@
 
 "clock": {
   "interval": 1,
-  "format": "  {:%d.%m.%Y |  %H:%M:%S}",
+  "format": " {:%d.%m.%Y |  %H:%M:%S}",
   "locale": "cs_CZ.UTF-8",
   "tooltip-format": "<span size= '10pt' font='Hack Nerd Font'>{calendar}</span>",
       "calendar": {

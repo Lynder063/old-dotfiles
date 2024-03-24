@@ -9,6 +9,7 @@
 - [ ] Add icons to `install.sh` file
 - [ ] Fix swaylock or move to hyprland alternative
 - [ ] Update rice screenshots
+- [ ] Create custom neovim config based from nvchad
 
 ## Installation
 
