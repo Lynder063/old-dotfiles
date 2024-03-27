@@ -20,6 +20,7 @@
 - [ ] Fix swaylock or move to hyprland alternative
 - [ ] Update rice screenshots
 - [ ] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
+- [ ] Add waybar-module-pacman-updates
 
 ## Installation
 
