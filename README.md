@@ -1,5 +1,15 @@
 # My Arch Linux rice
 
+- Compositor: **Hyprland** 
+- Terminal: **Kitty** 
+- Shell: **zsh** 
+- Color scheme: **Cattpuccin Mocha** 
+- GUI file manager: **Nautilus** 
+- Bar: **Waybar** 
+- App launcher: **Wofi** 
+- Text editor: **Neovim** 
+- PDF viewer: **Zathura** 
+
 ![Screenshot 1](pics/pic_1.png)
 ![Screenshot 1](pics/pic_2.png)
 ![Screenshot 1](pics/pic_3.png)
@@ -9,7 +19,7 @@
 - [ ] Add icons to `install.sh` file
 - [ ] Fix swaylock or move to hyprland alternative
 - [ ] Update rice screenshots
-- [ ] Create custom neovim config based from nvchad
+- [ ] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
 ## Installation
 
