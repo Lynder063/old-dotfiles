@@ -22,7 +22,7 @@
 },
 
   "custom/updates": {
-    "format": " {icon}",
+    "format": " ",
     "return-type": "json",
     "format-icons": {
       "has-updates": "󱍷",
