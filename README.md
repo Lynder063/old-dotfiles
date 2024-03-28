@@ -19,6 +19,7 @@
 - [ ] Fix `install.sh` file
 - [ ] Fix swaylock or move to hyprland alternative
 - [ ] Update rice screenshots
+- [ ] Correct waybar colors
 - [x] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
 ## Installation
@@ -57,7 +58,7 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 - Installation of basic packages
 
 ``` bash
-yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha-gnome hyprshot polk - keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
+yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccin-gtk-theme-mocha-gnome hyprshot polk - keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme hyprland-autoname-workspaces-git
 ```
 
 - Set a dark theme for the **gnome** applications

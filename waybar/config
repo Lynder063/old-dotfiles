@@ -3,7 +3,7 @@
         "height": 25,
         "spacing": 0,
         "modules-left": ["hyprland/workspaces", "privacy"],
-        "modules-cent": ["clock"],
+        "modules-center": ["clock"],
         "modules-right": [
         "backlight",
         "battery",
