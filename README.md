@@ -10,9 +10,9 @@
 - Text editor: **Neovim** 
 - PDF viewer: **Zathura** 
 
-![Screenshot 1](pics/pic_1.png)
-![Screenshot 1](pics/pic_2.png)
-![Screenshot 1](pics/pic_3.png)
+![Screenshot 1](pics/pic1.png)
+![Screenshot 1](pics/pic2.png)
+![Screenshot 1](pics/pic3.png)
 
 
 ## TODO
