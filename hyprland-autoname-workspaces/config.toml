@@ -52,15 +52,14 @@ DEFAULT="{icon}"
 
 
 [title_in_class."(firefox|chrom.*|Brave)"]
-"(?i)Youtube" = "󰗃"
-"(?i)Twitch" = ""
+"(?i)Youtube" = "<span color='#FF0000'>󰗃</span>"
+"(?i)Twitch" = "<span color='purple'></span>"
 "(?i)Instagram" = ""
-"(?i)Messenger" = ""
-# [title_active."(firefox|chrom.*|Brave)"]
-# "(?i)Twitch" = "<span color='purple'>{icon}</span>"
+"(?i)Messenger" = "<span color='#006AFF'></span>"
+"(?i)Moodle" = "󱨠"
 
 [title_in_class."(?i)kitty"]
-nvim = "" 
+nvim = "<span color='green'></span>" 
 
 # [initial_title_active."(?i)kitty"]
 # "zsh" = "*Zsh*"
