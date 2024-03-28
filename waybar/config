@@ -20,20 +20,6 @@
   "separate-outputs": true
 },
 
-
-"gamemode": {
-    "format": "{glyph}",
-    "format-alt": "{glyph} {count}",
-    "glyph": "",
-    "hide-not-running": true,
-    "use-icon": true,
-    "icon-name": "input-gaming-symbolic",
-    "icon-spacing": 4,
-    "icon-size": 20,
-    "tooltip": true,
-    "tooltip-format": "Games running: {count}"
-},
-
 "tray": {
   "icon-size": 15,
   "spacing": 5
@@ -41,7 +27,7 @@
 
 "clock": {
   "interval": 1,
-  "format": " {:%d.%m.%Y |  %H:%M:%S}",
+  "format": " {:%d.%m.%Y  %H:%M:%S}",
   "locale": "cs_CZ.UTF-8",
   "tooltip-format": "<span size= '10pt' font='Hack Nerd Font'>{calendar}</span>",
       "calendar": {
@@ -65,7 +51,7 @@
   "states": {
     "good": 95,
     "warning": 30,
-    "critical": 15
+    "critical": 20
   },
   "format": "{capacity}% {icon}",
   "format-charging": "{capacity}% ",

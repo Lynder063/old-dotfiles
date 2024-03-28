@@ -64,49 +64,41 @@ button:hover {
 #pulseaudio,
 #tray,
 #window,
-#gamemode,
 #privacy-item.screenshare,
 #privacy-item.audio-in,
 #workspaces {
     padding: 0 15px;
     margin: 0 2px;
     border-radius: 7px;
-}
-
-#window {
-    background: @crust;
-    color: white;
-}
+    background-color: @crust;
+  }
 
 #workspaces {
     color: @text;
-    background-color: @crust;
-}
+}  
 
-#gamemode{
-      background-color: @crust;
+#clock {
+    color: @green;
+    background-color: @crust;
 }
 
 #backlight {
-    color: @red;
-    background-color: @crust;
-}
-
-#pulseaudio {
-    color: @sky;
-    background-color: @crust;
-
-}
-
-#battery {
-    background-color: @crust;
     color: @yellow;
 }
 
-#clock {
-    color: @lavender;
-    background-color: @crust;
+#battery {
+    color: @maroon;
 }
+
+#pulseaudio {
+    color: @teal;
+
+}
+
+#window {
+    color: white;
+}
+
 
 #battery icon {
     color: red;
@@ -130,7 +122,7 @@ button:hover {
     background-color: @red;
     color: white;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -140,14 +132,13 @@ button:hover {
     background-color: @red;
     color: white;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 1.5s;  
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 #tray {
-    background-color: @crust;
     color: #ffffff;
 }
 
