@@ -13,12 +13,12 @@
 ![Screenshot 1](pics/pic_1.png)
 ![Screenshot 1](pics/pic_2.png)
 ![Screenshot 1](pics/pic_3.png)
-![Screenshot 1](pics/pic_4.png)
+
 
 ## TODO
 - [ ] Fix `install.sh` file
 - [ ] Fix swaylock or move to hyprland alternative
-- [ ] Update rice screenshots
+- [x] Update rice screenshots
 - [ ] Correct waybar colors
 - [x] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
