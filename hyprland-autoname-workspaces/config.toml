@@ -56,8 +56,6 @@ DEFAULT="{icon}"
 "(?i)Twitch" = ""
 "(?i)Instagram" = ""
 "(?i)Messenger" = ""
-"(?i)X" = ""
-"(?i)Github" = ""
 # [title_active."(firefox|chrom.*|Brave)"]
 # "(?i)Twitch" = "<span color='purple'>{icon}</span>"
 

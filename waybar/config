@@ -3,7 +3,7 @@
         "height": 25,
         "spacing": 0,
         "modules-left": ["hyprland/workspaces", "privacy"],
-        "modules-center": ["clock"],
+        "modules-cent": ["clock"],
         "modules-right": [
         "backlight",
         "battery",
@@ -20,17 +20,19 @@
   "separate-outputs": true
 },
 
-  "custom/updates": {
-    "format": " ",
-    "return-type": "json",
-    "format-icons": {
-      "has-updates": "󱍷",
-      "updated": "󰂪"
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates"
-   },
 
+"gamemode": {
+    "format": "{glyph}",
+    "format-alt": "{glyph} {count}",
+    "glyph": "",
+    "hide-not-running": true,
+    "use-icon": true,
+    "icon-name": "input-gaming-symbolic",
+    "icon-spacing": 4,
+    "icon-size": 20,
+    "tooltip": true,
+    "tooltip-format": "Games running: {count}"
+},
 
 "tray": {
   "icon-size": 15,
