@@ -12,6 +12,26 @@ client_dup = "{icon}{counter_sup}{delim}"
 client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
 client_fullscreen = "[{icon}]{delim}"
 
+# [initial_class]
+# "DEFAULT" = " {class}: {title}"
+# "(?i)Kitty" = "term"
+
+# [initial_class_active]
+# "(?i)Kitty" = "*TERM*"
+
+# regex captures support is supported
+# [title_in_class."(?i)foot"]
+# "emerge: (.+?/.+?)-.*" = "{match1}"
+
+# [initial_title_in_class."kitty"]
+# "zsh" = ""
+
+# [title_in_class."(firefox|chrom|brave)"]
+# "(?i)Youtube" = "󰗃"
+# "(?i)twitch" = ""
+# "(?i)Instagram" = ""
+# "(?i)Messenger" = ""
+
 [class_active]
 DEFAULT="{icon}"
 "(?i)firefox" = " {class}"
@@ -24,27 +44,25 @@ DEFAULT="{icon}"
 # "(?i)Kitty" = "*TERM*"
 
 # regex captures support is supported
-[title_in_class."(?i)foot"]
-"emerge: (.+?/.+?)-.*" = "{match1}"
+# [title_in_class."(?i)foot"]
+# "emerge: (.+?/.+?)-.*" = "{match1}"
 
-[initial_title_in_class."kitty"]
-"zsh" = ""
+# [initial_title_in_class."kitty"]
+# "zsh" = ""
 
-[title_in_class."(firefox|chrom.*|brave)"]
-"(?i)youtube" = "ꟳ"
-"(?i)twitch" = "ꟳ"
 
-[title_active."(firefox|chrom.*|brave)"]
-"(?i)twitch" = "<span color='purple'>{icon}</span>"
+[title_in_class."(firefox|chrom.*|Brave)"]
+"(?i)Youtube" = "󰗃"
+"(?i)Twitch" = ""
+"(?i)Instagram" = ""
+"(?i)Messenger" = ""
+"(?i)X" = ""
+"(?i)Github" = ""
+# [title_active."(firefox|chrom.*|Brave)"]
+# "(?i)Twitch" = "<span color='purple'>{icon}</span>"
 
-# [title_in_initial_class."(?i)kitty"]
-# "(?i)neomutt" = "neomutt"
-
-# [initial_title_in_initial_class."(?i)kitty"]
-# "(?i)neomutt" = "neomutt"
-
-# [initial_title."(?i)kitty"]
-# "zsh" = "Zsh"
+[title_in_class."(?i)kitty"]
+nvim = "" 
 
 # [initial_title_active."(?i)kitty"]
 # "zsh" = "*Zsh*"
@@ -64,85 +82,28 @@ DEFAULT="{icon}"
 
 [class]
 DEFAULT = ""
+blueman-manager = ""
 "(?i)firefox" = ""
-"(?i)kitty" = ""
-"(?i)alacritty" = ""
-bleachbit = ""
-burp-startburp = ""
-calibre-gui = ""
-"chrome-faolnafnngnfdaknnbpnkhgohbobgegn-default" = ""
+"(?i)kitty" = ""
+vesktop = ""
 chromium = ""
-Brave = ""
-"Gimp-2.10" = ""
-code-oss = ""
-cssh = ""
-darktable = ""
+Brave = ""
+obs = ""
 discord = ""
-dmenu-clipboard = ""
-dmenu-pass = ""
-duolingo = ""
-element = ""
-fontforge = ""
-gcr-prompter = ""
-gsimplecalc = ""
-"jetbrains-studio" = ""
-"kak" = ""
-kicad = ""
-"(?i)waydroid.*" = "droid"
 obsidian = ""
-"dmenu-emoji" = ""
-"dmenu-browser" = ""
-"dmenu-pass generator" = ""
-"qalculate-gtk" = ""
-krita = ""
-libreoffice-calc = ""
-libreoffice-impress = ""
-libreoffice-startcenter = ""
-libreoffice-writer = ""
-molotov = ""
-mpv = ""
-neomutt = ""
+libreoffice-calc = "󱎏"
+libreoffice-impress = "󱎐"
+libreoffice-startcenter = "󰏆"
+libreoffice-writer = ""
 nm-connection-editor = ""
-org-ksnip-ksnip = ""
-org-pwmt-zathura = ""
-org-qutebrowser-qutebrowser = ""
-org-telegram-desktop = ""
-paperwork = ""
+"org.pwmt.zathura" = ""
 pavucontrol = ""
-personal = ""
-plexamp = ""
-qutepreview = ""
-rapid-photo-downloader = ""
-remote-viewer = ""
-sandboxed-tor-browser = ""
-scli = ""
-shopping = ""
-Signal = ""
-slack = ""
-snappergui = ""
-songrec = ""
 spotify = ""
 steam = ""
-streamlink-twitch-gui = ""
-sun-awt-x11-xframepeer = ""
-swappy = ""
-taskwarrior-tui = ""
-telegramdesktop = ""
-".*transmission.*" = ""
-udiskie = ""
-vimiv = ""
 virt-manager = ""
 vlc = ""
-vncviewer = ""
-wayvnc = "󰀄"
-whatsapp-desktop = ""
-whatsapp-nativefier-d52542 = ""
-wire = "󰁀"
-wireshark-gtk = ""
-wlfreerdp = "󰀄"
-work = ""
-xplr = ""
-nemo = ""
-zoom = ""
+Nautilus = ""
+
+
 [exclude]
 "" = "^$" # prevent displaying clients with empty class

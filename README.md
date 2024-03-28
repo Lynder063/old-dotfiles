@@ -16,11 +16,10 @@
 ![Screenshot 1](pics/pic_4.png)
 
 ## TODO
-- [ ] Add icons to `install.sh` file
+- [ ] Fix `install.sh` file
 - [ ] Fix swaylock or move to hyprland alternative
 - [ ] Update rice screenshots
-- [ ] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
-- [ ] Add waybar-module-pacman-updates
+- [x] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
 ## Installation
 

@@ -1,7 +1,7 @@
 @import "mocha.css";
 
 * {
-    font-family: "Hack Nerd Font, Font Awesome";
+    font-family: "Hack Nerd Font";
     font-weight: bold;
     font-size: 13px;
 }
@@ -25,6 +25,7 @@ window#waybar.hidden {
 }
 
 button {
+
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
@@ -39,24 +40,20 @@ button:hover {
 #workspaces button {
     /*padding: 0 4px;*/
     background-color: @crust;
-}
+  }
+
 
 #workspaces button:hover {}
 
 #workspaces button.active {
-    /*    box-shadow: inset 0 -2px #c9545d; */
+    /*    box-shadow: inset 0 -2px #; */
     background-color: @crust;
-    color: #c9545d;
+    color: @peach;
     text-decoration: none;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    background-color: @red;
 }
 
 .custom-spotify,
