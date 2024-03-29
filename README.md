@@ -25,7 +25,7 @@
 
 ## Installation
 
-### 📄 Automatic
+#### 📄 Automatic
 I have created script for setuping this rice
 ```bash
 ./install.sh
