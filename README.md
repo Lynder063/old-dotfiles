@@ -26,7 +26,7 @@ i use arch btw
 
 ## Credit
 
-Thank you (shvchk)[https://github.com/shvchk] for awesome GRUB theme and (JKech)[https://gitlab.com/jktech] for help with debugging
+Thank you [shvchk](https://github.com/shvchk) for awesome GRUB theme and [JKech](https://gitlab.com/jktech) for help with debugging ❤️
 
 
 ## Installation
