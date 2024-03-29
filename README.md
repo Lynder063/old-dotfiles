@@ -1,4 +1,5 @@
-# My Arch Linux rice
+# My Arch Linux setup
+i use arch btw
 
 - Compositor: **Hyprland** 
 - Terminal: **Kitty** 
