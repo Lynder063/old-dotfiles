@@ -16,7 +16,7 @@
 ![Screenshot 1](pics/pic3.png)
 
 
-## TODO
+## 📝 TODO
 - [ ] Fix `install.sh` file
 - [x] Fix swaylock or move to hyprland alternative
 - [x] Update rice screenshots
@@ -25,14 +25,14 @@
 
 ## Installation
 
-### Automatic
+### 📄 Automatic
 I have created script for setuping this rice
 ```bash
 ./install.sh
 ```
 
 ### Manual install
-#### Basic settings
+#### 📖 Basic settings
 
 - Adding user to correct groups
 
@@ -62,7 +62,7 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 cp $HOME/.config/wofi/emoji.sh $HOME/.config/wofi/screenshot.sh /usr/local/bin
 ```
 
-- Installation of basic packages
+- 📦 Installation of basic packages
 
 ``` bash
 yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper catppuccin-gtk-theme-mocha-gnome hyprshot polkit gnome-keyring ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle
@@ -73,7 +73,7 @@ yay -S hyprland kitty grim slupr wofi waybar neovim ttf-hack-nerd ttf-font-aweso
 ``` bash
 gsettings set org.gnome.desktop.interface color scheme prefer-dark
 ```
-#### Zsh
+#### 🖥️ Zsh
 
 ``` bash
 yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
@@ -101,7 +101,7 @@ ZSH_AUTOSUGGEST_STRATEGY=( complete history )
 neofetch
 ```
 
-#### Nautilus
+#### 📂 Nautilus
  
 ``` bash
 nautilus -q
@@ -126,7 +126,7 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 ```
 
-#### Grub
+#### 🔐 Grub
 [Thanks shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
 - Download the installation script
@@ -140,7 +140,7 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
 bash /tmp/install.sh
 ```
 
-#### Ly
+#### 🏁 Ly
 
 - We start the daemon for ly
 ``` bash
