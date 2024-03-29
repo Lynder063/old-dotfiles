@@ -30,6 +30,7 @@ I have created script for setuping this rice
 ```bash
 ./install.sh
 ```
+Test on `archlinux-2024.03.01` with kernel `6.8.2`
 
 ### Manual install
 #### 📖 Basic settings
