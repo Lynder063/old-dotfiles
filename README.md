@@ -17,7 +17,7 @@
 
 
 ## 📝 TODO
-- [ ] Fix `install.sh` file
+- [x] Fix `install.sh` file
 - [x] Fix swaylock or move to hyprland alternative
 - [x] Update rice screenshots
 - [x] Correct waybar colors
