@@ -24,6 +24,11 @@ i use arch btw
 - [x] Correct waybar colors
 - [x] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
+## Credit
+
+Thank you (shvchk)[https://github.com/shvchk] for awesome GRUB theme and (JKech)[https://gitlab.com/jktech] for help with debugging
+
+
 ## Installation
 
 #### 📄 Automatic
@@ -129,7 +134,6 @@ gsettings set org.gnome.nautilus.preferences show-hidden-files true
 ```
 
 #### 🔐 Grub
-[Thanks shvchk <3](https://github.com/shvchk/fallout-grub-theme?tab=readme-ov-file)
 
 - Download the installation script
 
