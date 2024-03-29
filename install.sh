@@ -31,22 +31,18 @@ fi
 sudo usermod -aG input ${USER}
 sudo usermod -aG video ${USER}
 
-# Delete existing .config if exists
-rm -rf $HOME/.config
-
 # Clone repository as .config
-cd $HOME && git clone https://github.com/Lynder063/dotfiles.git .config
+rm -rf $HOME/.config
+cd $HOME && git clone https://github.com/Lynder063/dotfiles.git .config || error_exit "Failed to clone dotfiles repository."
 
 # Installation of basic packages
-yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman-applet dunst hyprpaper swaylock-effects catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme
+yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman dunst hyprpaper swaylock-effects catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle nautilus-open-any-terminal
 
 # Set dark theme for gnome applications
 gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
 
-# Install zsh and related plugins
-yay -S --noconfirm --needed zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
-
 # Set up zsh with Oh My Zsh
+yay -S --noconfirm --needed zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $HOME/.zshrc
 echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> $HOME/.zshrc
@@ -55,23 +51,20 @@ echo 'ZSH_AUTOSUGGEST_STRATEGY=( complete history )' >> $HOME/.zshrc
 echo '[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"' >> $HOME/.zshrc
 echo 'neofetch' >> $HOME/.zshrc
 
-# Install the terminal addon in nautilus
-yay -S --noconfirm --needed nautilus-open-any-terminal
-
-# Add support for kitty terminal
+# Add support for kitty terminal in nautilus
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 
 # Enable settings to show hidden files in Nautilus
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
 
 # Download the Grub installation script
-wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh
+wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh || error_exit "Failed to download Grub installation script."
 
 # Launch Grub installation
-bash /tmp/install.sh
+bash /tmp/install.sh || error_exit "Failed to launch Grub installation."
 
 # Start ly daemon
-sudo systemctl enable ly --now
+sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
 
 echo "Installation complete."
 
