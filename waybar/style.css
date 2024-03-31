@@ -66,6 +66,8 @@ button:hover {
 #window,
 #privacy-item.screenshare,
 #privacy-item.audio-in,
+#cpu,
+#memory,
 #workspaces {
     padding: 0 15px;
     margin: 0 2px;
@@ -78,8 +80,15 @@ button:hover {
 }  
 
 #clock {
-    color: @green;
-    background-color: @crust;
+    color: @sky;
+}
+
+#cpu{
+  color: @teal;
+}
+
+#memory{
+  color: @green;
 }
 
 #backlight {
