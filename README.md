@@ -18,6 +18,7 @@ i use arch btw
 
 
 ## 📝 TODO
+- [ ] Reconfigure WOFI theming 
 - [x] Fix `install.sh` file
 - [x] Fix swaylock or move to hyprland alternative
 - [x] Update rice screenshots
