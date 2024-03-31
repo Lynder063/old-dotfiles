@@ -1,6 +1,12 @@
-mode=drun
-allow_images=true
-image_size=28
+show=drun
 width=600
-height=350
-prompt=Search...
+height=400
+always_parse_args=true
+allow_images=true
+image_size=32
+show_all=false
+term=kitty
+hide_scroll=true
+print_command=true
+insensitive=true
+columns=2
