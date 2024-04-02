@@ -67,7 +67,7 @@ git clone https://github.com/Lynder063/dotfiles.git .config
 - Copying scripts for wofi to `/usr/local/bin`
 
 ```bash
-cp $HOME/.config/wofi/emoji.sh $HOME/.config/wofi/screenshot.sh /usr/local/bin
+cp $HOME/.config/wofi/emoji.sh $HOME/.config/hypr/gamemode.sh $HOME/.config/wofi/screenshot.sh /usr/local/bin
 ```
 
 - 📦 Installation of basic packages

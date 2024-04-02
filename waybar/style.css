@@ -77,30 +77,30 @@ button:hover {
 
 #workspaces {
     color: @text;
-}  
+ }  
 
 #clock {
-    color: @sky;
+    background-color: @red;
 }
 
 #cpu{
-  color: @teal;
+  color: @pink;
 }
 
 #memory{
-  color: @green;
+  color: @yellow;
 }
 
 #backlight {
-    color: @yellow;
+    color: @green;
 }
 
 #battery {
-    color: @maroon;
+    color: @sky;
 }
 
 #pulseaudio {
-    color: @teal;
+    color: @sapphire;
 
 }
 
