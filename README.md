@@ -18,6 +18,7 @@ i use arch btw
 
 
 ## 📝 TODO
+- [ ] Redo README.md to by more redeable
 - [x] Reconfigure WOFI theming 
 - [x] Fix `install.sh` file
 - [x] Fix swaylock or move to hyprland alternative
