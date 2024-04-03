@@ -18,6 +18,7 @@ i use arch btw
 
 
 ## 📝 TODO
+- [ ] Redo WOFI protože Jakub je debil
 - [ ] Redo README.md to by more redeable
 - [x] Reconfigure WOFI theming 
 - [x] Fix `install.sh` file

@@ -100,7 +100,7 @@ steam = ""
 virt-manager = ""
 vlc = ""
 Nautilus = ""
-
+mpv = ""
 
 [exclude]
 "" = "^$" # prevent displaying clients with empty class
