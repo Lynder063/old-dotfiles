@@ -67,6 +67,7 @@ button:hover {
 #privacy-item.screenshare,
 #privacy-item.audio-in,
 #cpu,
+#network,
 #memory,
 #workspaces {
     padding: 0 15px;
