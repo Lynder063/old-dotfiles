@@ -1,6 +1,6 @@
 # Arch Linux Rice Setup
 
-Welcome to my customized Arch Linux environment designed for enhanced productivity and aesthetics.
+This setup is handcrafted configuration to provide a seamless and visually appealing user experience based on my liking. It includes a curated selection of applications and customizations to optimize your workflow on Arch Linux with Hyprland and other apps.
 
 ## Screenshots
 
@@ -12,10 +12,6 @@ Welcome to my customized Arch Linux environment designed for enhanced productivi
 
 ![Screenshot 3](pics/pic3.png)
 *Screenshot 3: Nautilus file manager and Waybar*
-
-## Introduction
-
-This setup is handcrafted configuration to provide a seamless and visually appealing user experience based on my liking. It includes a curated selection of applications and customizations to optimize your workflow on Arch Linux with Hyprland and other apps.
 
 ## 📝 TODO
 - [ ] Add kvantum into script and README.md
