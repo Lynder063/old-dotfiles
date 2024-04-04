@@ -19,7 +19,7 @@ i use arch btw
 
 ## 📝 TODO
 - [ ] Add kvantum into script and README.md
-- [ ] Redo WOFI protože Jakub je debil @jktech 
+- [x] Redo WOFI protože Jakub je debil @jktech 
 - [ ] Redo README.md to by more redeable
 - [x] Reconfigure WOFI theming 
 - [x] Fix `install.sh` file
