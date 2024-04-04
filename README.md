@@ -14,9 +14,9 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 *Screenshot 3: Nautilus file manager and Waybar*
 
 ## 📝 TODO
-- [ ] Add kvantum into script and README.md
+- [x] Add kvantum into script and README.md
 - [x] Redo WOFI protože Jakub je debil @jktech 
-- [ ] Redo README.md to by more redeable
+- [x] Redo README.md to by more redeable
 - [x] Reconfigure WOFI theming 
 - [x] Fix `install.sh` file
 - [x] Fix swaylock or move to hyprland alternative
