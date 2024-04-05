@@ -14,6 +14,7 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 *Screenshot 3: Nautilus file manager and Waybar*
 
 ## 📝 TODO
+- [ ] After installing with `install.sh` grub is broken and can't boot 
 - [ ] Replace ly with SDDM with Windows 7 theme or some other nice theme
 - [ ] Add env variable to set with system install
 - [x] Add kvantum into script and README.md
