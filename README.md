@@ -14,6 +14,7 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 *Screenshot 3: Nautilus file manager and Waybar*
 
 ## 📝 TODO
+- [ ] Add env variable to set with system install
 - [x] Add kvantum into script and README.md
 - [x] Redo WOFI protože Jakub je debil @jktech 
 - [x] Redo README.md to by more redeable

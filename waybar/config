@@ -1,16 +1,15 @@
 {
         "layer": "top",
-        "height": 25,
-        "spacing": 0,
-        "modules-left": ["hyprland/workspaces", "privacy"],
+        "height": 36,
+        "spacing": 5,
+        "modules-left": ["hyprland/workspaces","cpu", "memory", "privacy"],
         "modules-center": ["clock"],
-        "modules-right": ["cpu",
-        "memory",
+        "modules-right": [
         "backlight",
         "battery",
         "pulseaudio",
-        "network",
-        "tray"],
+        "tray",
+        ],
 
         
 "hyprland/workspaces": {
@@ -53,7 +52,7 @@
 
 "clock": {
   "interval": 1,
-  "format": " {:%d.%m.%Y  %H:%M:%S}",
+  "format": " {:%d.%m.%y  %H:%M}",
   "locale": "cs_CZ.UTF-8",
   "tooltip-format": "<span size= '10pt' font='Hack Nerd Font'>{calendar}</span>",
       "calendar": {
@@ -75,18 +74,13 @@
 "battery": {
   "bat": "BAT1",
   "states": {
-    "good": 95,
     "warning": 30,
     "critical": 20
   },
   "format": "{capacity}% {icon}",
   "format-charging": "{capacity}% ",
   "format-plugged": "{capacity}% ",
-  "format-icons": ["",
-    "",
-    "",
-    "",
-    ""]
+  "format-icons": ["", "", "", "", ""]
 },   
 
 "pulseaudio": {
