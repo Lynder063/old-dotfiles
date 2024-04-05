@@ -1,6 +1,6 @@
 {
         "layer": "top",
-        "height": 36,
+        "height": 26,
         "spacing": 5,
         "modules-left": ["hyprland/workspaces","cpu", "memory", "privacy"],
         "modules-center": ["clock"],
