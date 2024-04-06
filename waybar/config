@@ -13,9 +13,11 @@
         ],
 
         
+
 "hyprland/workspaces": {
-  "format": "{icon}",
+  "format": "<span font='normal 12px Font Awesome 6 Free'>{icon}</span>"
 },
+
 
 "hyprland/window": {
   "max-length": 130,

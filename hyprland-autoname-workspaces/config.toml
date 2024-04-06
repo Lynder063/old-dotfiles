@@ -1,7 +1,7 @@
 version = "1.1.13"
 
 [format]
-dedup = true
+dedup = false 
 dedup_inactive_fullscreen = false
 delim = " "
 client = "{icon}{delim}"
@@ -52,14 +52,14 @@ DEFAULT="{icon}"
 
 
 [title_in_class."(firefox|chrom.*|Brave)"]
-"(?i)Youtube" = "<span color='#FF0000'>󰗃</span>"
-"(?i)Twitch" = "<span color='purple'></span>"
+"(?i)Youtube" = "󰗃"
+"(?i)Twitch" = ""
 "(?i)Instagram" = ""
-"(?i)Messenger" = "<span color='#006AFF'></span>"
+"(?i)Messenger" = ""
 "(?i)Moodle" = "󱨠"
 
 [title_in_class."(?i)kitty"]
-nvim = "<span color='green'></span>" 
+nvim = "" 
 
 # [initial_title_active."(?i)kitty"]
 # "zsh" = "*Zsh*"
@@ -84,10 +84,9 @@ blueman-manager = ""
 "(?i)kitty" = ""
 vesktop = ""
 chromium = ""
-Brave = ""
+Brave = ""
 obs = ""
 discord = ""
-obsidian = ""
 libreoffice-calc = "󱎏"
 libreoffice-impress = "󱎐"
 libreoffice-startcenter = "󰏆"
@@ -101,6 +100,7 @@ virt-manager = ""
 vlc = ""
 Nautilus = ""
 mpv = ""
+"org.qbittorrent.qBittorrent" = ""
 
 [exclude]
 "" = "^$" # prevent displaying clients with empty class
