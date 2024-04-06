@@ -1,14 +1,15 @@
 {
         "layer": "top",
         "height": 26,
-        "spacing": 5,
-        "modules-left": ["hyprland/workspaces","cpu", "memory", "privacy"],
+        "spacing": 0,
+        "modules-left": ["hyprland/workspaces","tray", "privacy"],
         "modules-center": ["clock"],
         "modules-right": [
+        "cpu",
+        "memory",
         "backlight",
         "battery",
         "pulseaudio",
-        "tray",
         ],
 
         
@@ -30,7 +31,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
+    "max-length": 50,
 },
 
 
@@ -41,7 +42,7 @@
 },
 
 "tray": {
-  "icon-size": 15,
+  "icon-size": 19,
   "spacing": 5
 },
 

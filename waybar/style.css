@@ -1,54 +1,74 @@
-@import "mocha.css";
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+@define-color text #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color sapphire #74c7ec;
+@define-color sky #89dceb;
+@define-color teal #94e2d5;
+@define-color green #a6e3a1;
+@define-color yellow #f9e2af;
+@define-color peach #fab387;
+@define-color maroon #eba0ac;
+@define-color red #f38ba8;
+@define-color mauve #cba6f7;
+@define-color pink #f5c2e7;
+@define-color flamingo #f2cdcd;
+@define-color rosewater #f5e0dc;
+
 
 * {
     font-family: "Hack Nerd Font";
     font-weight: bold;
     font-size: 13px;
-    border-radius: 8px 8px 8px 8px;
-}
+
+  }
 
 window#waybar {
-  background-color: transparent;
-  color: #ffffff;
-  /* border-radius: 8px; */
-  /* border-width: 3px; */
-  /* border-color: #3b4252; */
-  /* border-style: solid; */
+    background-color: transparent;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+#window label {
+    background-color: red;
+    font-weight: bold;
 }
 
-/* #waybar.empty #window { */
-/*} */
+#workspaces button{
+    color: 	#89b4fa;
+    background: #09090F;
+    margin-right: 10px;
+    border-radius: 15px;
 
-#window {
-    color: #64727d;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    padding: 20px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
 }
 
-button {
-}
+#workspaces button.active{
+    background: #89b4fa ;
+    color: #09090F;
+    margin-right: 10px;
+    border-radius: 15px;
 
-button:hover {
-    background: inherit;
-}
+    background: radial-gradient(circle, rgba(203,166,247,1) 0%, rgba(193,168,247,1) 12%, rgba(249,226,175,1) 19%, rgba(189,169,247,1) 20%, rgba(182,171,247,1) 24%, rgba(198,255,194,1) 36%, rgba(177,172,247,1) 37%, rgba(170,173,248,1) 48%, rgba(255,255,255,1) 52%, rgba(166,174,248,1) 52%, rgba(160,175,248,1) 59%, rgba(148,226,213,1) 66%, rgba(155,176,248,1) 67%, rgba(152,177,248,1) 68%, rgba(205,214,244,1) 77%, rgba(148,178,249,1) 78%, rgba(144,179,250,1) 82%, rgba(180,190,254,1) 83%, rgba(141,179,250,1) 90%, rgba(137,180,250,1) 100%); 
+    background-size: 400% 400%;
+    color: black;
 
-#workspaces button {
-  background-color: @crust;
-}
-
-
-/* #workspaces button:hover {} */
-
-#workspaces button.active {
-	color:  @blue;
-  border: @blue 2px solid;
-}
-
-#workspaces button.urgent {
-    background-color: @red;
-    border: @red 2px solid;
 }
 
 #clock,
@@ -61,27 +81,30 @@ button:hover {
 #cpu,
 #network,
 #memory,
-#workspaces {
-  /* background-color: #3b4252; */
-  background-color: @crust;
-  /* padding: 0em 2em; */
+#privacy-item.screenshare,
+#privacy-item.audio-in{ 
+  color:  #d3869b;
+    background: #09090F;
 
-  font-weight: bold;
-  padding-left: 13px;
-  padding-right: 13px;
+    margin-right: 10px;
+    border-radius: 15px;
 
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    padding: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-weight: bolder;
 
-  margin-right: 5px;
-
-  /* font-size: 20px; */
+    /* margin-top: 10px; */
 }
+
 
 #workspaces {
     color: @text;
  }  
 
 #clock {
-    color: @red;
+    color: @text;
 }
 
 #cpu{
@@ -156,7 +179,5 @@ button:hover {
 #privacy-item.audio-in{
   background-color: @peach;
   color: @crust;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
