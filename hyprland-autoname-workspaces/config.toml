@@ -52,7 +52,7 @@ DEFAULT="{icon}"
 
 
 [title_in_class."(firefox|chrom.*|Brave)"]
-"(?i)Youtube" = "󰗃"
+"(?i)Youtube" = ""
 "(?i)Twitch" = ""
 "(?i)Instagram" = ""
 "(?i)Messenger" = ""
