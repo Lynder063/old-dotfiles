@@ -16,8 +16,7 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 ## 📝 TODO
 - [x] Edit `laptop_lid.sh`
 - [x] Update screenshots to match title
-- [ ] After installing with `install.sh` grub is broken and can't boot 
-- [ ] Replace ly with SDDM with Windows 7 theme or some other nice theme
+- [x] After installing with `install.sh` grub is broken and can't boot 
 - [ ] Add env variable to set with system install
 - [x] Add kvantum into script and README.md
 - [x] Redo WOFI protože Jakub je debil @jktech 
