@@ -14,8 +14,8 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 *Screenshot 3: Nautilus file manager and Waybar*
 
 ## 📝 TODO
-- [ ] Edit `laptop_lid.sh`
-- [ ] Update screenshots to match title
+- [x] Edit `laptop_lid.sh`
+- [x] Update screenshots to match title
 - [ ] After installing with `install.sh` grub is broken and can't boot 
 - [ ] Replace ly with SDDM with Windows 7 theme or some other nice theme
 - [ ] Add env variable to set with system install
