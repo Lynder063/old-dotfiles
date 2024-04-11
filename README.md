@@ -82,7 +82,7 @@ gsettings set org.gnome.desktop.interface color scheme prefer-dark
 #### 🖥️ Zsh
 1. Installing `zsh` necessery packages
 ``` bash
-yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
+yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k lsd
 ```
 
 2. Let's run `zsh` and type **0**
@@ -102,6 +102,12 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 ZSH_AUTOSUGGEST_STRATEGY=( complete history )
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"
 neofetch
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 ```
 
 #### 📂 Nautilus
