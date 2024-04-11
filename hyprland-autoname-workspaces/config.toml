@@ -101,6 +101,6 @@ vlc = ""
 Nautilus = ""
 mpv = ""
 "org.qbittorrent.qBittorrent" = ""
-
+Kuro = ""
 [exclude]
 "" = "^$" # prevent displaying clients with empty class

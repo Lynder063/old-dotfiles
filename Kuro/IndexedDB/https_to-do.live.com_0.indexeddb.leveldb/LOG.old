@@ -1,0 +1,20 @@
+2024/04/11-11:47:48.574 800e Creating DB /home/lynder063/.config/Kuro/IndexedDB/https_to-do.live.com_0.indexeddb.leveldb since it was missing.
+2024/04/11-11:47:48.583 800e Reusing MANIFEST /home/lynder063/.config/Kuro/IndexedDB/https_to-do.live.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/04/11-11:47:48.588 8022 Level-0 table #5: started
+2024/04/11-11:47:48.594 8022 Level-0 table #5: 523 bytes OK
+2024/04/11-11:47:48.601 8022 Delete type=0 #3
+2024/04/11-11:47:48.601 800c Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/04/11-11:47:48.610 800c Level-0 table #7: started
+2024/04/11-11:47:48.612 800c Level-0 table #7: 505 bytes OK
+2024/04/11-11:47:48.636 800c Delete type=0 #4
+2024/04/11-11:47:48.637 8010 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/04/11-11:47:48.637 800c Level-0 table #9: started
+2024/04/11-11:47:48.638 800c Level-0 table #9: 507 bytes OK
+2024/04/11-11:47:48.640 800c Delete type=0 #6
+2024/04/11-11:47:48.641 800c Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x03\x00\x00\x05' @ 41 : 1
+2024/04/11-11:47:48.641 800c Compacting 1@0 + 1@1 files
+2024/04/11-11:47:48.658 800c Generated table #10@0: 13 keys, 472 bytes
+2024/04/11-11:47:48.659 800c Compacted 1@0 + 1@1 files => 472 bytes
+2024/04/11-11:47:48.660 800c compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/04/11-11:47:48.660 800c Delete type=2 #9
+2024/04/11-11:47:48.661 800c Manual compaction at level-0 from '\x00\x03\x00\x00\x05' @ 41 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
