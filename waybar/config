@@ -30,10 +30,11 @@
     "format-wifi": "{essid} ({signalStrength}%) ",
     "format-ethernet": "{ipaddr}/{cidr} 󰈀",
     "format-disconnected": "", //An empty format will hide the module.
-    "tooltip-format": "{ifname} via {gwaddr} 󰈀",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-    "tooltip-format-ethernet": "{ifname} ",
-    "tooltip-format-disconnected": "Disconnected",
+		"tooltip-format": "{ifname} via {gwaddr} 󰈀\n{bandwidthUpBits} 󰳘\n{bandwidthDownBits} 󰱦",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%) {ifname} {icon}\n{bandwidthUpBits} 󰳘\n{bandwidthDownBits} 󰱦",
+		"tooltip-format-ethernet": "{ipaddr}/{cidr} {ifname} 󰈀\n{bandwidthUpBits} 󰳘\n{bandwidthDownBits} 󰱦",
+		"tooltip-format-disconnected": "Disconnected",
+
     "max-length": 50,
 },
 
