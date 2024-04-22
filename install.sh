@@ -37,7 +37,7 @@ rm -rf $HOME/.config
 cd $HOME && git clone https://gitlab.com/Lynder063/dotfiles.git .config || error_exit "Failed to clone dotfiles repository."
 
 # Installation of basic packages
-yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman dunst hyprpaper catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle nautilus-open-any-terminal kvantum wl-clipboard wtype lsd
+yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman dunst hyprpaper catppuccin-gtk-theme-mocha hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle nautilus-open-any-terminal kvantum wl-clipboard wtype lsd
 
 # Set dark theme for gnome applications
 gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
