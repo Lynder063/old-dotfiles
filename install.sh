@@ -37,7 +37,7 @@ rm -rf $HOME/.config
 cd $HOME && git clone https://gitlab.com/Lynder063/dotfiles.git .config || error_exit "Failed to clone dotfiles repository."
 
 # Installation of basic packages
-yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman dunst hyprpaper catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle nautilus-open-any-terminal kvantum wl-clipboard wtype
+yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura ttf-hack-nerd ttf-font-awesome noto-fonts-emoji network-manager-applet blueman dunst hyprpaper catppuccino-gtk-theme-mocha-gnome hyprshot polk ly nwg-look neofetch nautilus ocs-url wget curl xdg-desktop-portal-hyprland tela-icon-theme-purple-git hyprland-autoname-workspaces-git hyprlock hypridle nautilus-open-any-terminal kvantum wl-clipboard wtype lsd
 
 # Set dark theme for gnome applications
 gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
@@ -65,13 +65,9 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh 
 bash /tmp/install.sh || error_exit "Failed to launch Grub installation."
 
 # Move .gtkrc-2.0 to $HOME
-cp .gtkrc-2.0 $HOME/.gtkrc-2.0 || error_exit "Failed to move .gtkrc-2.0 file to $HOME."
+cp .gtkrc-2.0 $HOME/|| error_exit "Failed to move .gtkrc-2.0 file to $HOME."
 
 # Start ly daemon
 sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
-
-# Clean up
-rm -rf /tmp/yay-git || error_exit "Failed to remove yay-git directory."
-rm /tmp/install.sh || error_exit "Failed to remove Grub installation script."
 
 echo "Installation complete."
