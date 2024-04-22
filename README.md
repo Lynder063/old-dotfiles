@@ -15,6 +15,8 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 
 ## 📝 TODO
 - [x] Edit `laptop_lid.sh`
+- [ ] Remake install script
+- [ ] Fix issue, after using script that not correct Icons are used and gtk and kvantum theme
 - [x] Update screenshots to match title
 - [x] After installing with `install.sh` grub is broken and can't boot 
 - [ ] Add env variable to set with system install
