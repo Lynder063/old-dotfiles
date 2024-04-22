@@ -90,7 +90,7 @@ yay -S zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k l
 
 2. Let's run `zsh` and type **0**
 
-3.  We will install [ohmyzsh](https://ohmyz.sh/#install)
+3. We will install [ohmyzsh](https://ohmyz.sh/#install)
 
 You need to have the `curl` and `wget` packages installed
 ``` bash
