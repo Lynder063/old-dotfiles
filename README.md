@@ -1,5 +1,4 @@
 # Arch Linux Rice Setup
-
 This setup is handcrafted configuration to provide a seamless and visually appealing user experience based on my liking. It includes a curated selection of applications and customizations to optimize your workflow on Arch Linux with Hyprland and other apps.
 
 ## Screenshots
@@ -14,22 +13,9 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 *Screenshot 3: Nautilus file manager and Waybar*
 
 ## 📝 TODO
-- [x] Edit `laptop_lid.sh`
-- [ ] Remake install script
-- [ ] Fix issue, after using script that not correct Icons are used and gtk and kvantum theme
+- [ ] Fix issue, after using script that not correct Icons are used and gtk and kvantum theme *script errors on coping `.gtkrc` file* 
 - [ ] Rewrite `README.md`
-- [x] Update screenshots to match title
-- [x] After installing with `install.sh` grub is broken and can't boot 
 - [ ] Add env variable to set with system install
-- [x] Add kvantum into script and README.md
-- [x] Redo WOFI protože Jakub je debil @jktech 
-- [x] Redo README.md to by more redeable
-- [x] Reconfigure WOFI theming 
-- [x] Fix `install.sh` file
-- [x] Fix swaylock or move to hyprland alternative
-- [x] Update rice screenshots
-- [x] Correct waybar colors
-- [x] [Hyprland autotag naming](https://github.com/hyprland-community/hyprland-autoname-workspaces)
 
 
 ## Installation
