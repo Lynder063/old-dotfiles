@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # Function to display error messages and exit
@@ -63,8 +64,14 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh 
 # Launch Grub installation
 bash /tmp/install.sh || error_exit "Failed to launch Grub installation."
 
+# Move .gtkrc-2.0 to $HOME
+cp .gtkrc-2.0 $HOME/.gtkrc-2.0 || error_exit "Failed to move .gtkrc-2.0 file to $HOME."
+
 # Start ly daemon
 sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
 
-echo "Installation complete."
+# Clean up
+rm -rf /tmp/yay-git || error_exit "Failed to remove yay-git directory."
+rm /tmp/install.sh || error_exit "Failed to remove Grub installation script."
 
+echo "Installation complete."
