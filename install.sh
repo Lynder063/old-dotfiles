@@ -42,15 +42,9 @@ yay -S --noconfirm --needed hyprland kitty grim slurp wofi waybar neovim zathura
 # Set dark theme for gnome applications
 gsettings set org.gnome.desktop.interface color scheme 'prefer-dark'
 
-# Set up zsh with Oh My Zsh
+# Set up zsh
 yay -S --noconfirm --needed zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel10k
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> $HOME/.zshrc
-echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> $HOME/.zshrc
-echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >> $HOME/.zshrc
-echo 'ZSH_AUTOSUGGEST_STRATEGY=( complete history )' >> $HOME/.zshrc
-echo '[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"' >> $HOME/.zshrc
-echo 'neofetch' >> $HOME/.zshrc
+cp $HOME/.config/.zshrc $HOME/ || error_exit "Failed to copy ZSH config to $HOME"
 
 # Add support for kitty terminal in nautilus
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
