@@ -59,7 +59,7 @@ wget -P /tmp https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh 
 bash /tmp/install.sh || error_exit "Failed to launch Grub installation."
 
 # Move .gtkrc-2.0 to $HOME
-cp .gtkrc-2.0 $HOME/|| error_exit "Failed to move .gtkrc-2.0 file to $HOME."
+cp $HOME/.config/.gtkrc-2.0 $HOME/|| error_exit "Failed to move .gtkrc-2.0 file to $HOME."
 
 # Start ly daemon
 sudo systemctl enable ly --now || error_exit "Failed to start ly daemon."
