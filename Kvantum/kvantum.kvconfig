@@ -1,5 +1,6 @@
 [General]
-theme=Catppuccin-Mocha-Peach
+theme=Catppuccin-Mocha-Blue
 
 [Applications]
+Catppuccin-Mocha-Blue=vlc
 Catppuccin-Mocha-Peach=vlc
