@@ -2,8 +2,8 @@
         "layer": "top",
         "height": 26,
         "spacing": 0,
-        "modules-left": ["hyprland/workspaces","tray", "privacy"],
-        "modules-center": ["clock"],
+        "modules-left": ["hyprland/workspaces", "privacy"],
+        "modules-center": ["tray", "clock"],
         "modules-right": [
         "cpu",
         "memory",
@@ -13,7 +13,6 @@
         "network",
         ],
 
-        
 
 "hyprland/workspaces": {
   "format": "<span font='normal 12px Font Awesome 6 Free'>{icon}</span>"
@@ -83,8 +82,8 @@
     "critical": 20
   },
   "format": "{capacity}% {icon}",
-  "format-charging": "{capacity}% ",
-  "format-plugged": "{capacity}% ",
+  "format-charging": "󱐋 {capacity}%",
+  "format-plugged": "󱐋 {capacity}%",
   "format-icons": ["", "", "", "", ""]
 },   
 

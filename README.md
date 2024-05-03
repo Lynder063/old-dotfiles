@@ -12,12 +12,6 @@ This setup is handcrafted configuration to provide a seamless and visually appea
 ![Screenshot 3](pics/pic3.png)
 *Screenshot 3: Nautilus file manager and Waybar*
 
-## 📝 TODO
-- [ ] Fix issue, after using script that not correct Icons are used and gtk and kvantum theme *script errors on coping `.gtkrc` file* 
-- [ ] Rewrite `README.md`
-- [ ] Add env variable to set with system install
-
-
 ## Installation
 
 ### Automatic Installation
@@ -54,7 +48,7 @@ git clone https://gitlab.com/Lynder063/dotfiles.git .config
 4. Copying scripts for wofi to `/usr/local/bin`
 
 ```bash
-cp $HOME/.config/wofi/emoji.sh $HOME/.config/hypr/gamemode.sh $HOME/.config/wofi/screenshot.sh /usr/local/bin
+sudo cp $HOME/.config/wofi/emoji.sh $HOME/.config/hypr/gamemode.sh $HOME/.config/wofi/screenshot.sh /usr/local/bin
 ```
 
 5. 📦 Installation of basic packages
@@ -116,7 +110,6 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
 4.  Enable settings to show hidden files
-
 
 ```bash
 gsettings set org.gnome.nautilus.preferences show-hidden-files true
