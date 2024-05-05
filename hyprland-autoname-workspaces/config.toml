@@ -12,40 +12,17 @@ client_dup = "{icon}{counter_sup}{delim}"
 client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
 client_fullscreen = "[{icon}]{delim}"
 
-# [initial_class]
-# "DEFAULT" = " {class}: {title}"
-# "(?i)Kitty" = "term"
-
-# [initial_class_active]
-# "(?i)Kitty" = "*TERM*"
-
-# regex captures support is supported
-# [title_in_class."(?i)foot"]
-# "emerge: (.+?/.+?)-.*" = "{match1}"
-
-# [initial_title_in_class."kitty"]
-# "zsh" = ""
-
-# [title_in_class."(firefox|chrom|brave)"]
-# "(?i)Youtube" = "󰗃"
-# "(?i)twitch" = ""
-# "(?i)Instagram" = ""
-# "(?i)Messenger" = ""
+[title_in_class."virt-manager"]
+"(?i)Win" = ""
+"(?i)Ubuntu" = ""
+"(?i)Endeavour" = ""
+"(?i)Arch" = "󰣇"
+"(?i)Debian" = ""
+"(?i)Alma" = ""
 
 [class_active]
 DEFAULT="{icon}"
 "(?i)firefox" = " "
-
-# [initial_class]
-# "DEFAULT" = " {class}: {title}"
-# "(?i)Kitty" = "term"
-
-# [initial_class_active]
-# "(?i)Kitty" = "*TERM*"
-
-# regex captures support is supported
-# [title_in_class."(?i)foot"]
-# "emerge: (.+?/.+?)-.*" = "{match1}"
 
 # [initial_title_in_class."kitty"]
 # "zsh" = ""
@@ -60,9 +37,6 @@ DEFAULT="{icon}"
 
 [title_in_class."(?i)kitty"]
 nvim = "" 
-
-# [initial_title_active."(?i)kitty"]
-# "zsh" = "*Zsh*"
 
 [workspaces_name]
 0 = "zero"
@@ -100,7 +74,10 @@ virt-manager = ""
 vlc = ""
 Nautilus = ""
 mpv = ""
+"org.kde.kdenlive" = ""
 "org.qbittorrent.qBittorrent" = ""
-Kuro = ""
+Kuro = ""
+eog = ""
+"org.gnome.Calculator" = ""
 [exclude]
-"" = "^$" # prevent displaying clients with empty class
+"" = "^$"
