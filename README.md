@@ -85,7 +85,6 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 ZSH_AUTOSUGGEST_STRATEGY=( complete history )
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitty ssh"
 neofetch
-
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
