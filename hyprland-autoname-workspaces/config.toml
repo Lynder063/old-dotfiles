@@ -79,5 +79,6 @@ mpv = ""
 Kuro = ""
 eog = ""
 "org.gnome.Calculator" = ""
+Code = ""
 [exclude]
 "" = "^$"
