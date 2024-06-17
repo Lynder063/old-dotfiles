@@ -1,4 +1,7 @@
-# Arch Linux Rice Setup
+# INFO
+These dotfiles were made for my older system on Acer Aspire 3 *(AMD Vega 8 mobile, Ryzen 5 2500U, 8GB)*. Unfortunately it broke down. So i will be creating new dotfiles for my new PC which could be found on my github
+
+## Arch Linux Rice Setup
 This setup is handcrafted configuration to provide a seamless and visually appealing user experience based on my liking. It includes a curated selection of applications and customizations to optimize your workflow on Arch Linux with Hyprland and other apps.
 
 ## Screenshots
